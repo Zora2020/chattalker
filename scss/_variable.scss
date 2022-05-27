@@ -1,0 +1,136 @@
+
+/*依照設計稿計算出container
+  視口大小 1136 扣掉左右139 加padding 左右16
+  1136-139-139+16+16=1120
+
+*/
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.pt8{
+    padding-top: 8px;
+}
+
+.pt12{
+    padding-top: 12px;
+}
+
+.pt16{
+    padding-top: 16px;
+}
+
+.pt24{
+    padding-top: 24px;
+}
+
+.pt32{
+    padding-top: 32px;
+}
+
+.pt48{
+    padding-top: 48px;
+}
+
+.pb8{
+    padding-bottom: 8px;
+}
+
+.pb16{
+    padding-bottom: 16px;
+}
+
+.pb24{
+    padding-bottom: 24px;
+}
+
+.pb32{
+    padding-bottom: 32px;
+}
+
+.pr8{
+    padding-right: 8px;
+}
+.pr16{
+    padding-right: 16px;
+}
+
+.pr24{
+    padding-right: 24px;
+}
+
+.pr32{
+    padding-right: 32px;
+}
+
+.pl8{
+    padding-left: 8px;
+}
+
+.pl16{
+    padding-left: 16px;
+}
+
+.pl24{
+    padding-left: 24px;
+}
+
+.pl32{
+    padding-left: 32px;
+}
+
+.fz16{
+    font-size: 16px;
+}
+
+.fz18{
+    font-size: 18px;
+}
+
+.fz20{
+    font-size: 20px;
+}
+.fz32{
+    font-size: 32px;
+}
+
+.fz48{
+    font-size: 48px;
+}
+
+.fwb{
+    font-weight: bold;
+}
+
+.color-d{
+    color:#221E1F ;
+}
+
+.color-l{
+    color:#747474 ;
+}
+
+.color-g{
+    color: #56C4C5;
+}
+
+.border-color{
+    border: 1px solid #00000014;
+}
+.df{
+    display: flex;
+}
+
+.fdr{
+    flex-direction: row-reverse;
+}
+.fww{
+    flex-wrap: wrap;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
