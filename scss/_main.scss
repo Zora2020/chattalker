@@ -1,3 +1,26 @@
+.page-img{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right top ,-222px 578px;
+    height: auto;
+    
+
+    @media(max-width: 768px){
+        background-image: none ,none;
+        background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
+        background-position: 80px 760px;
+        background-size: 500px;
+        
+    }
+    @media(max-width: 375px){
+        background-image: none ,none;
+        background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
+        background-position: 15px 380px;
+        background-size: 334px;
+        
+    }
+}
+
 
 
 .header{
@@ -19,17 +42,23 @@
         }
     }
 
+    @media(max-width: 768px){
+        border-bottom: 2px solid #FFD153;
+        
+    }
+
     @media(max-width: 375px){
         border-bottom: 2px solid #FFD153;
+        
     }
 }
 
 .banner{
     max-width: 1085px;
-    height: auto;
-    padding-bottom: 116px;
+    height: 534px;
+    display: flex;
     .banner-text{
-        width: 41.5%;
+        width: 451px;
         padding-bottom: 157px;
         .slogn{
             padding-top: 158px;
@@ -39,11 +68,14 @@
         }
     }
     .banner-img{        
-            width: 49%;
+            width: 532px;
     }
 
     @media(max-width: 375px){
-            
+        .banner{
+            display: flex;
+            justify-content: center;
+        }    
             .banner-text{
                 padding-left: 20px;
                 .slogn{
@@ -75,8 +107,16 @@
     h2{
         text-align: center;
     }
-    @media(max-width: 375px){
+    @media(max-width: 768px){
+        
         h2{font-size: 28px;
+           margin-top: 600px;
+        }
+    }   
+    @media(max-width: 375px){
+        
+        h2{font-size: 28px;
+           margin-top: 90px;
         }
     }
     .social-items{
@@ -90,6 +130,18 @@
             line-height: 1.5;
         }    
     }
+    @media(max-width: 768px){
+        
+        .mpadding16{
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        .social-items{
+            height: 240px;
+            width: 100%;
+        }
+    }
     @media(max-width: 375px){
         
         .mpadding16{
@@ -102,4 +154,9 @@
             width: 100%;
         }
     }
+}
+
+.charactor{
+    align-items: center;
+    margin-top: 100px;
 }

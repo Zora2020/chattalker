@@ -67,6 +67,31 @@ img {
           box-sizing: border-box;
 }
 
+.page-img {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: right top ,-222px 578px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .page-img {
+    background-image: none ,none;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
+    background-position: 80px 760px;
+    background-size: 500px;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-img {
+    background-image: none ,none;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
+    background-position: 15px 380px;
+    background-size: 334px;
+  }
+}
+
 .header {
   height: 88px;
 }
@@ -89,6 +114,12 @@ img {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .header {
+    border-bottom: 2px solid #FFD153;
+  }
+}
+
 @media (max-width: 375px) {
   .header {
     border-bottom: 2px solid #FFD153;
@@ -97,8 +128,10 @@ img {
 
 .banner {
   max-width: 1085px;
-  height: auto;
-  padding-bottom: 116px;
+  height: 534px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .banner .banner-text {
@@ -115,10 +148,18 @@ img {
 }
 
 .banner .banner-img {
-  width: 49%;
+  width: 532px;
 }
 
 @media (max-width: 375px) {
+  .banner .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .banner .banner-text {
     padding-left: 20px;
   }
@@ -149,9 +190,17 @@ img {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .social h2 {
+    font-size: 28px;
+    margin-top: 600px;
+  }
+}
+
 @media (max-width: 375px) {
   .social h2 {
     font-size: 28px;
+    margin-top: 90px;
   }
 }
 
@@ -169,6 +218,17 @@ img {
   line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+  .social .mpadding16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .social .social-items {
+    height: 240px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 375px) {
   .social .mpadding16 {
     padding-top: 16px;
@@ -178,6 +238,13 @@ img {
     height: 240px;
     width: 100%;
   }
+}
+
+.charactor {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
 }
 
 /*依照設計稿計算出container
