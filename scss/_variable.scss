@@ -11,6 +11,11 @@
     padding-right: 16px;
 }
 
+.mauto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .pt8{
     padding-top: 8px;
 }
@@ -49,6 +54,10 @@
 
 .pb32{
     padding-bottom: 32px;
+}
+
+.pb48{
+    padding-bottom: 48px;
 }
 
 .pr8{
@@ -133,4 +142,8 @@
 
 .jcsb{
     justify-content: space-between;
+}
+
+.tac{
+    text-align: center;
 }
