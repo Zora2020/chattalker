@@ -90,6 +90,7 @@ img {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
     background-position: 15px 480px;
     background-size: 334px;
+    background-position: 8px 80px;
   }
 }
 
@@ -291,21 +292,25 @@ img {
   }
 }
 
-.charactor {
+.outofcharactor {
+  max-width: 1366px;
+  position: relative;
+}
+
+.outofcharactor .charactor {
   height: 527px;
   max-width: 1088px;
   margin-top: 100px;
   text-align: center;
-  position: relative;
   /*使用絕對定位法放圓球*/
 }
 
-.charactor .charactor-box {
+.outofcharactor .charactor .charactor-box {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.charactor .charactor-box .charactor-items {
+.outofcharactor .charactor .charactor-box .charactor-items {
   height: 388px;
   width: calc(100%/4-48px);
   border: 1px solid #00000014;
@@ -315,12 +320,12 @@ img {
   background-color: white;
 }
 
-.charactor .charactor-box .charactor-items img {
+.outofcharactor .charactor .charactor-box .charactor-items img {
   width: 260px;
   border-radius: 12px 12px 0px 0px;
 }
 
-.charactor .ball-mid {
+.outofcharactor .charactor .ball-mid {
   /*圓球*/
   width: 210px;
   height: 310px;
@@ -329,22 +334,58 @@ img {
   background-size: 310px;
   position: absolute;
   top: 400px;
-  right: -120px;
+  right: 0px;
   z-index: -1;
 }
 
 @media (max-width: 768px) {
-  .charactor {
+  .outofcharactor {
+    margin-top: 200px;
+    height: 00px;
+    margin-bottom: 600px;
+  }
+  .outofcharactor .charactor {
     max-width: 768px;
     margin-top: 480px;
   }
-  .charactor .charactor-box {
+  .outofcharactor .charactor .charactor-box {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .charactor .charactor-box .charactor-items {
+  .outofcharactor .charactor .charactor-box .charactor-items {
     margin-bottom: 24px;
+  }
+  .outofcharactor .charactor .ball-mid {
+    width: 90px;
+    height: 180px;
+    top: 860px;
+    right: 8px;
+    background-size: 180px;
+  }
+}
+
+@media (max-width: 375px) {
+  .outofcharactor {
+    margin-bottom: 560px;
+    margin-top: 600px;
+  }
+  .outofcharactor .charactor {
+    max-width: 768px;
+    margin-top: 480px;
+  }
+  .outofcharactor .charactor h2 {
+    font-size: 28px;
+  }
+  .outofcharactor .charactor br {
+    font-size: 18px;
+  }
+  .outofcharactor .charactor .ball-mid {
+    width: 88px;
+    height: 135px;
+    top: 1680px;
+    right: 0px;
+    background-size: 135px;
   }
 }
 
@@ -439,6 +480,8 @@ img {
 
 @media (max-width: 375px) {
   .tech {
+    margin-top: 300px;
+    margin-bottom: 1480px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -464,16 +507,33 @@ img {
 }
 
 /*好評如潮*/
-.comment {
+.outofcomment {
+  max-width: 1366px;
+  position: relative;
+}
+
+.outofcomment .comment {
   height: 432px;
 }
 
-.comment .comment-box {
+.outofcomment .comment .ball-orange1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  background-size: 150px;
+  position: absolute;
+  top: 32px;
+  left: 50px;
+  z-index: -1;
+}
+
+.outofcomment .comment .comment-box {
   max-width: 1088px;
   height: 304px;
 }
 
-.comment .comment-box .comment-items {
+.outofcomment .comment .comment-box .comment-items {
   margin-top: 56px;
   width: calc(100%/3-32);
   height: 248px;
@@ -482,13 +542,14 @@ img {
   margin-right: 8px;
   margin-left: 8px;
   position: relative;
+  background-color: white;
 }
 
-.comment .comment-box .comment-items p {
+.outofcomment .comment .comment-box .comment-items p {
   line-height: 1.2;
 }
 
-.comment .comment-box .comment-items .person {
+.outofcomment .comment .comment-box .comment-items .person {
   width: 80px;
   height: 80px;
   border-radius: 40px;
@@ -499,11 +560,11 @@ img {
   left: 32px;
 }
 
-.comment .comment-box .comment-items .person img {
+.outofcomment .comment .comment-box .comment-items .person img {
   width: 100%;
 }
 
-.comment .comment-box .comment-items .line {
+.outofcomment .comment .comment-box .comment-items .line {
   border-top: 1px solid  #00000014;
   max-width: 320px;
   -webkit-box-align: center;
@@ -511,40 +572,85 @@ img {
           align-items: center;
 }
 
+.outofcomment .comment .point {
+  width: 70px;
+  height: 10px;
+}
+
+.outofcomment .comment .point li {
+  width: 10px;
+  height: 10px;
+  background-color: #DDDDDD;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.outofcomment .comment .point .yellow-point {
+  width: 16px;
+  height: 10px;
+  background-color: #FFD153;
+}
+
 /*好評如潮 平板*/
 @media (max-width: 768px) {
-  .comment {
+  .outofcomment .comment {
     padding-top: 720px;
   }
-  .comment .comment-box {
+  .outofcomment .comment .ball-orange1 {
+    width: 120px;
+    height: 240px;
+    background-size: 240px;
+    position: absolute;
+    background-position: -120px;
+    top: 720px;
+    left: 8px;
+    z-index: -1;
+  }
+  .outofcomment .comment .point {
+    margin-top: 680px;
+  }
+  .outofcomment .comment .comment-box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-left: 80px;
     padding-right: 80px;
   }
-  .comment .comment-box .comment-items {
+  .outofcomment .comment .comment-box .comment-items {
     margin-bottom: 40px;
   }
 }
 
 /*好評如潮 手機*/
 @media (max-width: 375px) {
-  .comment {
-    padding-top: 2200px;
+  .outofcomment .comment {
+    padding-top: 760px;
   }
-  .comment .comment-box {
+  .outofcomment .comment .ball-orange1 {
+    width: 77px;
+    height: 153px;
+    background-size: 153px;
+    background-position: -77px;
+    top: 860px;
+    left: 0px;
+  }
+  .outofcomment .comment .point {
+    margin-top: 660px;
+  }
+  .outofcomment .comment .comment-box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-left: 16px;
     padding-right: 16px;
   }
-  .comment .comment-box .comment-items {
+  .outofcomment .comment .comment-box .comment-items {
+    width: calc(100%-40);
+    height: auto;
     margin-bottom: 24px;
   }
 }
 
 /*fotter*/
 .fotter {
+  margin-top: 100px;
   padding-top: 10px;
   max-width: 1366;
   height: auto;
