@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.menu {
+  border: 1px  solid #0000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *:before, after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  max-width: 1366px;
+  height: 559px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.hero .hero-background {
+  max-width: 1366px;
+  height: 470px;
+  background-color: #F7F9FD;
+  border-radius: 0px 0px 0px 300px;
+}
+
+.hero img {
+  height: 100%;
+}
+
+.hero .b-top {
+  width: 128px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #56C4C5;
+  margin-top: 24px;
+}
+
+.hero .b-top a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.hero .b-top a:active {
+  background-color: #FF5D50;
+  border-radius: 20px;
+}
+
+/*依照設計稿計算出container
+  視口大小 1136 扣掉左右139 加padding 左右16
+  1136-139-139+16+16=1120
+
+*/
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pt8 {
+  padding-top: 8px;
+}
+
+.pt12 {
+  padding-top: 12px;
+}
+
+.pt16 {
+  padding-top: 16px;
+}
+
+.pt24 {
+  padding-top: 24px;
+}
+
+.pt32 {
+  padding-top: 32px;
+}
+
+.pt48 {
+  padding-top: 48px;
+}
+
+.pb8 {
+  padding-bottom: 8px;
+}
+
+.pb16 {
+  padding-bottom: 16px;
+}
+
+.pb24 {
+  padding-bottom: 24px;
+}
+
+.pb32 {
+  padding-bottom: 32px;
+}
+
+.pb48 {
+  padding-bottom: 48px;
+}
+
+.pr8 {
+  padding-right: 8px;
+}
+
+.pr16 {
+  padding-right: 16px;
+}
+
+.pr24 {
+  padding-right: 24px;
+}
+
+.pr32 {
+  padding-right: 32px;
+}
+
+.pl8 {
+  padding-left: 8px;
+}
+
+.pl16 {
+  padding-left: 16px;
+}
+
+.pl24 {
+  padding-left: 24px;
+}
+
+.pl32 {
+  padding-left: 32px;
+}
+
+.fz16 {
+  font-size: 16px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.fz20 {
+  font-size: 20px;
+}
+
+.fz32 {
+  font-size: 32px;
+}
+
+.fz48 {
+  font-size: 48px;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.color-d {
+  color: #221E1F;
+}
+
+.color-l {
+  color: #747474;
+}
+
+.color-g {
+  color: #56C4C5;
+}
+
+.border-color {
+  border: 1px solid #00000014;
+}
+
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fdr {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.fww {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tac {
+  text-align: center;
+}
+/*# sourceMappingURL=price-all.css.map */
