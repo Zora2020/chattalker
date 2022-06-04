@@ -67,26 +67,28 @@ img {
           box-sizing: border-box;
 }
 
-.hero {
-  max-width: 1366px;
-  height: 559px;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-}
-
-.hero .hero-background {
+.outofhero {
   max-width: 1366px;
   height: 470px;
+  position: relative;
+  background-size: 885px;
   background-color: #F7F9FD;
   border-radius: 0px 0px 0px 300px;
 }
 
-.hero img {
+.outofhero .hero {
+  max-width: 1366px;
+  height: 559px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.outofhero .hero .menu img {
   height: 100%;
 }
 
-.hero .b-top {
+.outofhero .hero .menu .b-top {
   width: 128px;
   height: 40px;
   border-radius: 20px;
@@ -94,13 +96,13 @@ img {
   margin-top: 24px;
 }
 
-.hero .b-top a {
+.outofhero .hero .menu .b-top a {
   display: block;
   text-decoration: none;
   color: white;
 }
 
-.hero .b-top a:active {
+.outofhero .hero .menu .b-top a:active {
   background-color: #FF5D50;
   border-radius: 20px;
 }
