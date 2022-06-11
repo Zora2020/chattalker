@@ -7,13 +7,16 @@
 .container{
     max-width: 1120px;
     margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
+}
+.container2{
+    max-width: 909px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .mauto{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .pt8{
@@ -47,7 +50,9 @@
 .pb16{
     padding-bottom: 16px;
 }
-
+.mb16{
+    margin-bottom: 16px;
+}
 .pb24{
     padding-bottom: 24px;
 }
@@ -56,10 +61,17 @@
     padding-bottom: 32px;
 }
 
+.mb32{
+    margin-bottom: 32px;
+}
+
 .pb48{
     padding-bottom: 48px;
 }
 
+.mb48{
+    margin-bottom: 48px;
+}
 .pr8{
     padding-right: 8px;
 }
@@ -91,6 +103,10 @@
     padding-left: 32px;
 }
 
+.fz12{
+    font-size: 12px;
+}
+
 .fz16{
     font-size: 16px;
 }
@@ -101,6 +117,10 @@
 
 .fz20{
     font-size: 20px;
+}
+
+.fz29{
+    font-size: 29px;
 }
 .fz32{
     font-size: 32px;
@@ -114,8 +134,16 @@
     font-weight: bold;
 }
 
+.lh15{
+    line-height: 1.5;
+}
+
 .color-d{
     color:#221E1F ;
+}
+
+.color-w{
+    color:white ;
 }
 
 .color-l{
@@ -124,6 +152,18 @@
 
 .color-g{
     color: #56C4C5;
+}
+
+.background-g{
+    background-color: #56C4C5;
+}
+
+.background-w{
+    background-color: white;
+}
+
+.border-color-g{
+    border: 1px solid #56C4C5;
 }
 
 .border-color{
@@ -146,4 +186,8 @@
 
 .tac{
     text-align: center;
+}
+
+.sub{
+    vertical-align: sub;
 }
