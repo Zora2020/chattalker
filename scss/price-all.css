@@ -127,23 +127,23 @@ img {
 /*menu和背景圖-平板 */
 @media (max-width: 768px) {
   .outofhero {
-    max-width: 768px;
-    height: 600px;
-    position: relative;
-    background-size: 600px;
+    height: vh;
   }
   .outofhero .hero {
-    max-width: 768px;
-    height: 600px;
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg);
+    height: 100%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: top;
   }
   .outofhero .hero .header-text {
     max-width: 768px;
   }
   .outofhero .hero .header-text h2 {
-    margin-top: 48px;
+    margin-top: 120px;
+    margin-left: 48px;
+  }
+  .outofhero .hero .header-text p {
+    margin-left: 48px;
   }
   .outofhero .hero .menu {
     max-width: 768px;
@@ -151,15 +151,17 @@ img {
     border-bottom: 2px solid #FFD153;
   }
   .outofhero .hero .menu img {
-    width: 130px;
-    height: 100%;
+    width: 48%;
+    height: auto;
+    padding-left: 16px;
   }
   .outofhero .hero .menu .b-top {
     width: 128px;
     height: 40px;
     border-radius: 20px;
     background-color: #56C4C5;
-    margin-top: 24px;
+    margin-top: 32px;
+    margin-right: 16px;
   }
   .outofhero .hero .menu .b-top a {
     display: block;
@@ -173,6 +175,55 @@ img {
 }
 
 /*menu和背景圖-手機 */
+@media (max-width: 375px) {
+  .outofhero {
+    height: 495px;
+  }
+  .outofhero .hero {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .outofhero .hero .header-text {
+    max-width: 768px;
+  }
+  .outofhero .hero .header-text h2 {
+    margin-top: 120px;
+    margin-left: 24px;
+    font-size: 32px;
+  }
+  .outofhero .hero .header-text p {
+    margin-left: 24px;
+  }
+  .outofhero .hero .menu {
+    max-width: 768px;
+    background-color: white;
+    border-bottom: 2px solid #FFD153;
+  }
+  .outofhero .hero .menu img {
+    width: 48%;
+    height: auto;
+    padding-left: 16px;
+  }
+  .outofhero .hero .menu .b-top {
+    width: 128px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #56C4C5;
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+  .outofhero .hero .menu .b-top a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  .outofhero .hero .menu .b-top a:active {
+    background-color: #FF5D50;
+    border-radius: 20px;
+  }
+}
+
 /*彈性選擇*/
 .content {
   max-width: 909px;
@@ -203,6 +254,14 @@ img {
 
 .content .card-box {
   margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content .card-box .card {
@@ -265,7 +324,32 @@ img {
 }
 
 /*彈性選擇-平板*/
+@media (max-width: 768px) {
+  .card-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-box .card {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
 /*彈性選擇-手機*/
+@media (max-width: 375px) {
+  .container2 {
+    max-width: 375px;
+  }
+  .card-box .card {
+    width: 200%;
+  }
+}
+
 /*常見問題*/
 .faq {
   height: 58px;
