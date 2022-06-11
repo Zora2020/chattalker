@@ -255,18 +255,24 @@
     }
 
 /*彈性選擇-平板*/
-@media(max-width: 768px){
-
-    .card-box{
-        flex-direction: column;
-        align-items: center;
-        .card{
-            width: 100%;
-            margin-top: 30px;
-        }
+@media(max-width: 768px){    
+        .content{
+                .card-box{
+                    margin-bottom: 48px;
+                    flex-direction: column;
+                    align-items: center;
+                   
+                      .card{
+                        width: 100%;
+                        margin-bottom: 36px;
+                    }
+                }
+                
+           
+    
+    }
     }
 
-}
 
 /*彈性選擇-手機*/
 @media(max-width: 375px){
@@ -274,14 +280,17 @@
         max-width: 375px;
 
     }
-    .card-box{
-      
+    .content{        
+            .card-box{
+                margin-bottom: 40px;
+                  .card{
+                    width: 100%;
+                }
+            }
+            
+       
 
-        .card{
-            width: 200%;
-        }
-    }
-
+}
 }
 
 /*常見問題*/

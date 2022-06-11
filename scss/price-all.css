@@ -325,7 +325,8 @@ img {
 
 /*彈性選擇-平板*/
 @media (max-width: 768px) {
-  .card-box {
+  .content .card-box {
+    margin-bottom: 48px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -334,9 +335,9 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .card-box .card {
+  .content .card-box .card {
     width: 100%;
-    margin-top: 30px;
+    margin-bottom: 36px;
   }
 }
 
@@ -345,8 +346,11 @@ img {
   .container2 {
     max-width: 375px;
   }
-  .card-box .card {
-    width: 200%;
+  .content .card-box {
+    margin-bottom: 40px;
+  }
+  .content .card-box .card {
+    width: 100%;
   }
 }
 

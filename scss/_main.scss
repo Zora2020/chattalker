@@ -79,6 +79,9 @@
     }
 }    
     @media(max-width: 768px){
+        .container{
+            max-width: 768px;
+        } 
         .banner{
             max-width: 768px;            
             flex-wrap: wrap;
@@ -307,6 +310,8 @@
     flex-wrap: wrap;
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
     .text{
         max-width: 395px;
         height: 259px;
@@ -359,14 +364,18 @@
 
 @media(max-width: 768px){
     .tech{
-        justify-content: center;
-        
+        height: 800px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 560px;
         .text{
             text-align: center;
             margin-top: 240px;
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 200px;
+            margin-top: 310px;
+
             .space{
                 margin-bottom: 360px;
 
@@ -375,6 +384,7 @@
         .techbox{
             margin-right: auto;
             margin-left: auto;
+
             
         }
        
@@ -383,7 +393,7 @@
 
 @media(max-width: 375px){
     .tech{
-        margin-top: 300px;
+        margin-top: 560px;
         margin-bottom: 1480px;
         justify-content: center;
         .text{
@@ -487,9 +497,12 @@
 /*好評如潮 平板*/
 @media(max-width: 768px){
     .outofcomment{
+       
 
         .comment{
-            padding-top: 720px;
+            padding-top: 600px;
+            margin-top: 60px;
+            
             .ball-orange1{
                 width: 120px;
                 height: 240px;
@@ -501,12 +514,13 @@
                 z-index: -1;
             }
             .point{
-              margin-top: 680px;
+              margin-top: 720px;
             }
             .comment-box{
                 flex-wrap: wrap;
                 padding-left: 80px;
                 padding-right: 80px;
+                margin-bottom: 500px;
                 .comment-items{
                     margin-bottom: 40px;
                 }
@@ -523,7 +537,8 @@
 @media(max-width: 375px){
     .outofcomment{
         .comment{
-            padding-top: 760px;
+            margin-top: 480px;
+            
             .ball-orange1{
                 width: 77px;
                 height: 153px;
